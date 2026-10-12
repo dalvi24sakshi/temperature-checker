@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Result</title></head>
+<body style="text-align:center; font-family:Arial; margin-top:100px;">
+    <h2>Current Temperature in <span th:text="${city}"></span></h2>
+    <h1 style="font-size:80px; color:#007bff;" th:text="${temp} + '°C'"></h1>
+    <p>Checked at: <span th:text="${time}"></span></p>
+    <br>
+    <a href="/"><button style="padding:10px 20px;">⬅ Check Again</button></a>
+</body>
+</html>
